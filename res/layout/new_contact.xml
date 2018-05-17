@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/content_new_contact"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.sxr169330.contacts.NewContact"
+    tools:showIn="@layout/activity_new_contact">
+
+    //Label First name
+    <TextView
+        android:text="First Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblFname"
+        android:layout_alignBaseline="@+id/txtFname"
+        android:layout_alignBottom="@+id/txtFname"
+        android:layout_toStartOf="@+id/txtFname"
+        android:layout_marginEnd="20dp" />
+
+    //Text first name
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_marginEnd="24dp"
+        android:id="@+id/txtFname"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:hint="First Name" />
+
+    //Label Last name
+    <TextView
+        android:text="Last Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblLname"
+        android:layout_alignBaseline="@+id/txtLname"
+        android:layout_alignBottom="@+id/txtLname"
+        android:layout_alignEnd="@+id/lblFname" />
+
+    //Text Last name
+
+    //Label Phone
+
+    <TextView
+        android:text="Phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblPhone"
+        android:layout_alignBaseline="@+id/txtPhone"
+        android:layout_alignBottom="@+id/txtPhone"
+        android:layout_alignEnd="@+id/lblLname" />
+
+    //Text Phone
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:layout_marginTop="33dp"
+        android:id="@+id/txtPhone"
+        android:layout_below="@+id/txtLname"
+        android:layout_alignStart="@+id/txtLname"
+        android:hint="Phone" />
+
+    //Label email
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblEmail"
+        android:text="E-mail"
+        android:layout_alignBaseline="@+id/txtEmail"
+        android:layout_alignBottom="@+id/txtEmail"
+        android:layout_alignEnd="@+id/lblPhone" />
+
+    //Text Email
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginTop="44dp"
+        android:id="@+id/txtEmail"
+        android:layout_below="@+id/txtPhone"
+        android:layout_alignStart="@+id/txtPhone"
+        android:inputType="textEmailAddress"
+        android:hint="Email" />
+
+    //Label Birth date
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblBdate"
+        android:text="Birth Date"
+        android:layout_alignBaseline="@+id/txtBdate"
+        android:layout_alignBottom="@+id/txtBdate"
+        android:layout_alignEnd="@+id/lblEmail" />
+
+    //Text Birth date
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginTop="29dp"
+        android:id="@+id/txtBdate"
+        android:layout_below="@+id/txtEmail"
+        android:layout_alignStart="@+id/txtEmail"
+        android:inputType="date"
+        android:hint="Birth date" />
+
+    //Cancel Button
+
+    //Save button
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginTop="41dp"
+        android:id="@+id/txtLname"
+        android:inputType="textPersonName"
+        android:layout_below="@+id/txtFname"
+        android:layout_alignStart="@+id/txtFname"
+        android:hint="Last Name" />
+
+    <Button
+        android:text="     Cancel     "
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:id="@+id/btnCancel"
+        android:layout_width="wrap_content"
+        android:onClick="buttonCancel"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/txtBdate" />
+
+    //button Delete
+    <Button
+        android:text="    Delete   "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnDelete"
+        android:layout_alignBottom="@+id/btnCancel"
+        android:layout_centerHorizontal="true"
+        android:layout_alignTop="@+id/btnCancel"
+        android:onClick="buttonDelete" />
+
+    <Button
+        android:text="      Save      "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnSave"
+        android:onClick="buttonSave"
+        android:layout_alignBaseline="@+id/btnDelete"
+        android:layout_alignBottom="@+id/btnDelete"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="13dp" />
+
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.sxr169330.contacts.MainActivity">
+
+    <item
+        android:id="@+id/action_add_contact"
+        android:icon="@mipmap/ic_add_contact"
+        android:title="@string/add_contact"
+        app:showAsAction="always" />
+</menu>
